@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        color: #222;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f9f9f9;
+      }
+      body {
+        text-align: justify;
+        padding: 1rem;
+      }      
+      ul {
+        padding-left: 2rem;
+      }
+      li {
+        padding-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Your privacy is very important and the app will not collect any data which 
+      is not absolutely necessary for its functionality.
+    </p>
+    <p><strong>The COVID-19 Tester</strong> is collecting the following data:</p>
+    <ul>
+      <li>
+        <strong>DeviceId</strong> - this is an identifier which is persistent accross successive 
+        usage of the app and will change once the mobile app is deleted. Since it's
+        changing every time the app is deleted and reinstalled, it cannot be used
+        to uniquely identify you.
+      </li>
+      <li>
+        <strong>Location</strong> - the location is used upon your consent to share it only to 
+        detrmine the country, region and area you currently are to show relevant
+        statistics. Although the GPS coordinates are sent to the server, they are
+        only used to determine the country, region and area and are not stored.
+        Neverheless, the GPS coordinate, when provided, will be rounder to only 
+        two most semnificative digits to further protect your location.
+      </li>
+      <li>
+        <strong>IP Address</strong> - the IP Address is used to infer your broad location to the 
+        level of country, region and area in the absence of GPS coordinates. 
+        This is less accurate in detecting your current area, but it helps  
+        selecting the right country. We do not store the IP Addresses in our 
+        servers.
+      </li>
+      <li>
+        <strong>Hospital Code</strong> - this is a code which is randomly genrated at the first
+        run of the app. Like the DeviceId, it does not persist if the application
+        is deleted and reinstalled. Moreover, it will be wipd and regnerated if
+        the <strong>Reset application data</strong> option from <strong>More 
+        Options</strong> is used.
+        However, if provided by your doctor, it can be updated using the
+        <strong>Change hospital code</strong> from <strong>More Options</strong> 
+        screen.
+      </li>
+      <li>
+        <strong>Symptoms Results</strong> - the symptoms results are collected 
+        and stored along with the <strong>Hospial code</strong> for grouping 
+        purposes and are intended only for statistical reasons. The symptom 
+        results are stored localy in the app and are not rretriebvable when 
+        the <strong>Hospital Code</strong> is changed.
+      </li>
+    </ul>
+    <p>Please contact us for any enquiry or concern regardind your privacy.</p>
+    <p>&nbsp;</p>
+  </body>
+</html>

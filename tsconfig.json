@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "module": "es2015",
+    "rootDir": "app",
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "allowJs": false,
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "newLine": "lf",
+    "experimentalDecorators": true
+  },
+  "include": [
+    "typings/index.d.ts",
+    "app/**/*.ts",
+    "app/**/*.tsx"
+  ],
+  "exclude": [
+    "app/**/*.spec.ts",
+    "app/**/spec.ts"
+  ],
+  "types": [
+    "react",
+    "react-native",
+    "jest"
+  ],
+  "compileOnSave": true
+}

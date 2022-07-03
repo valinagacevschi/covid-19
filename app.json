@@ -1,0 +1,95 @@
+{
+  "expo": {
+    "name": "COVID-19 Teser",
+    "slug": "mysymptoms",
+    "privacy": "public",
+    "sdkVersion": "37.0.0",
+    "scheme": "tester",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon-192.png",
+    "backgroundColor": "#f9f9f9",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "notification": {
+      "icon": "./assets/icon-96.png",
+      "color": "#000000",
+      "iosDisplayInForeground": true,
+      "androidMode": "collapse",
+      "androidCollapsedTitle": "#{unread_notifications} meds to take."
+    },
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_ERROR_RECOVERY",
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.myhealthmed.mycovid",
+      "buildNumber": "1.0.1",
+      "icon": "./assets/icon-1024.png",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Your location is required to accurately provide contagion cases in your area."
+      }
+    },
+    "android": {
+      "package": "com.myhealthmed.mycovid",
+      "versionCode": 1  
+    },
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+        "js",
+        "jsx",
+        "ts",
+        "tsx",
+        "svg"
+      ]
+    },
+    "description": ""
+  },
+  "android": {
+    "config": {
+      "googleMaps": {
+        "apiKey": "AIzaSyCmqxhXW-prWaoNHya_4WnSkP0XNChcUKU"
+      }
+    },
+    "intentFilters": [
+      { 
+        "action": "VIEW",
+        "data": [
+          {
+            "scheme": "mycovid"
+          }
+        ],
+        "category": [
+          "BROWSABLE",
+          "DEFAULT"
+        ]
+      }
+    ],
+    "package": "com.myhealthmed.mycovid"
+  },
+  "hooks": {
+    "postPublish": [
+      {
+        "file": "sentry-expo/upload-sourcemaps",
+        "config": {
+          "organization": "experimentro",
+          "project": "clinical-followup",
+          "authToken": "8bf8bcf8386843f7b14404d7be55f39b591878e8ad32414090e5da314e4cf325"
+        }
+      }
+    ]
+  }
+}
